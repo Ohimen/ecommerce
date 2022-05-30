@@ -1,0 +1,998 @@
+/* login page */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: roboto;
+    background-color: #FFF;
+}
+
+#login-signup-background-image {
+    background-image: url("images/image3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#login-section {
+    margin: 5em auto;
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0.3em;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+#header-1 {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+#login-section h1 + form {
+    margin: 2em auto;
+    width: 70%;
+}
+
+div + span a {
+    text-decoration: none;
+    color: #1156b7;
+}
+
+#login-form-1 {
+    display: flex;
+    justify-content: center;
+}
+
+#login-form-2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+#login-form-1 button {
+    width: 100%;
+    margin: 1.5em 0 2em;
+    padding: 1em;
+    border-radius: 1em;
+    border-style: none;
+    background-color: #680D00;
+    color: white;
+    font-weight: bolder;
+}
+
+#login-form-1 button:hover {
+    background-color: #962918;
+    cursor: pointer;
+}
+
+
+#login-form-1 button a {
+    text-decoration: none;
+    color: white;
+}
+
+#form-hr div {
+    font-size: 0.9em;
+}
+
+#login-form-2 button {
+    width: 100%;
+    margin: 1.5em 0 2em;
+    padding: 1em;
+    border-radius: 1em;
+    border: 1px solid #680d00; 
+    color: #1156b7; 
+    font-weight: bolder;
+    background-color: #FFF;
+}
+
+#login-form-2 button:hover {
+    cursor: pointer;
+    border-color:  #f6a10f;
+    color: black;
+}
+
+#login-submit a:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.login-signup a:hover{
+    color: black;
+    cursor: pointer;
+}
+#email-login-form input, #password-login-form input {
+    width: 100%;
+    margin: 0.25em 0 2em;
+    padding: 1em;
+    border-radius: 1em;
+    border: 1px solid #680d00;
+}
+
+#email-login-form input:hover, #password-login-form input:hover  {
+    border-color:  #f6a10f;
+    cursor: pointer;
+}
+
+#email-login-form label, #password-login-form label {
+    font-weight: bolder;
+}
+
+#remember-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    
+}
+
+#form-hr hr {
+    width: 32%;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    border-top: 1.9px solid black;
+}
+
+#form-hr {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+
+
+
+
+/*          Signup Style          */
+
+#signup-section {
+    width: 50%;
+    height: 80vh;
+    margin: 5em auto;
+    background-color: rgb(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0.3em;
+}
+
+#signup-header {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2em;
+    font-weight: bolder;
+}
+
+section h2 + form {
+    width: 70%;
+    margin: 2em auto;
+}
+
+#signup-names {
+    display: flex;
+    justify-content: space-between;
+}
+
+#first-name-signup-form input, #last-name-signup-form input {
+    width: 98%;
+    margin: 0.2em 0 2em;
+    padding: 1em;
+    border-radius: 1em;
+    border: 1px solid #680d00;
+}
+
+#first-name-signup-form input:hover, #last-name-signup-form input:hover, #signup-email input:hover, #signup-password input:hover {
+    border-color:  #f6a10f;
+}
+
+#signup-email input {
+    width: 100%;
+    margin: 0.2em 0 2em;
+    padding: 1em;
+    border-radius: 1em;
+    border: 1px solid #680d00;
+}
+
+#signup-email input:hover, #signup-password input:hover, #terms-check > input:hover, #first-name-signup-form input:hover, #last-name-signup-form input:hover  {
+    cursor: pointer;
+}
+
+#signup-password input {
+    width: 100%;
+    margin: 0.2em 0 0.7em;
+    padding: 1em;
+    border-radius: 1em;
+    border: 1px solid #680d00;
+}
+
+
+#terms-check {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#terms-check > input {
+    margin-top: 0.17em;
+}
+
+#create-account-submit button {
+    width: 100%;
+    margin: 2em 0 0;
+    padding: 1.2em;
+    border-radius: 1em;
+    border-style: none;
+    background-color: #680d00;
+    color: white;
+    cursor: pointer;
+}
+
+#create-account-submit button a {
+    color: #FFF;
+}
+
+/*#create-account-submit button:hover {
+    cursor: pointer;
+    background-color: #962918;
+}*/
+
+#have-an-account p {
+    text-align: center;
+    margin: 2em 0;
+}
+
+ a {
+    text-decoration: none;
+    color: #680d00;
+}
+
+#signup-divs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.7em;
+}
+
+
+/*    Landing Page */
+
+.main-header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.landing-header {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.5em 0 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landing-logo img {
+    width: 6em;
+    height: 1.3em;
+}
+
+.landing-icons {
+    width: 40%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.landing-icons input {
+    width: 70%;
+    padding: 0.2em;
+    margin-right: 0.4em;
+    border-radius: 0.4em 0 0 0.4em;
+    border: 1.4px solid #680d00;
+}
+
+.landing-icons button {
+    padding: 0 1.2em;
+    transform: translateX(-0.5em);
+    background-color: #680d00;
+    border-radius: 0 0.4em 0.4em 0;
+    color: #FFF;
+    border: 1.4px solid #680d00;
+}
+
+.landing-icons span {
+    margin: 0.5em;
+}
+
+.landing-register {
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.landing-register .button-1 {
+    color: #680d00;
+    padding: 0.5em 1.2em;
+    background-color: #FFF;
+    margin-right: 0.3em;
+    border: 0.5PX solid #680d00;
+}
+
+.landing-register .button-2 {
+    color: #FFF;
+    background-color: #680d00;
+    border: none;
+    padding: 0.5em 1em;
+}
+
+.landing-register .button-1:hover {
+    border-color: #f6a10f;
+    cursor: pointer;
+}
+
+.landing-register .button-2:hover {
+    background-color: #9d3120;
+    cursor: pointer;
+}
+
+
+.landing-register .button-1 a {
+    color: #680d00;
+}
+
+.landing-register .button-2 a {
+    color: #FFF;
+}
+
+.heading-hr {
+    width: 90%;
+    margin: 0.3em auto 0;
+}
+
+.landing-page-header-2 ul {
+    width: 60%;
+    margin: 0.5em auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 0;
+}
+
+.landing-page-header-2 ul li {
+    font-size: 0.8em;
+    color: #680d00;
+    font-weight: bold;
+}
+
+.landing-page-header-2 ul li a {
+    text-decoration: none;
+    color: #680d00;
+    font-family: roboto, sans-serif;
+    transition: all 1.5s ease-out;
+}
+
+.landing-page-header-2 ul li a:hover {
+    color: #1156b7;
+}
+
+.main-layout {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cover-background { 
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.cover-background {
+    width: 100%;
+    height: 60Vh;
+    background-image: url("images/cover.jpg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    
+   
+}
+
+.gradient img {
+    width: 7em;
+    height: 7em;
+    margin: 2em 0;
+   
+}
+
+.gradient {
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgba(104, 13, 0, 0.5), rgba(104, 13, 0, 0.9));
+}
+
+.gradient > div {
+    font-size: 2.5em;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0.9;
+   
+}
+
+.home-button {
+    display: flex;
+    width: 100%;
+    margin-top: 2em;
+    margin-right: 3em;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.home-button > button {
+    padding: 0.5em 2em;
+    border: none;
+    background-color: rgba(168, 93, 0, 1);
+    color: #fff;
+}
+
+.home-button > button + a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.home-button > button a:hover {
+    
+}
+
+.home-button > button:hover, .home-button > button a:hover  {
+    background-color: #fff;
+    color: #680d00;
+    cursor: pointer;
+}
+
+.frame1-arrival {
+    margin: 5em auto 0;
+} 
+
+.frame1-arrival h1 {
+    font-size: 2em;
+    color: #680D00;
+    font-weight: bold;
+    text-align: center;
+}
+
+    /*    frame one card 1   */
+
+.frame1-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 2em 0;
+}
+
+.frame1-product {
+    display: flex;
+}
+
+.frame1-card {
+    flex: 0 0 auto;
+    width: 20%;
+    height: 500px;
+
+}
+
+.frame1-image {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.image-thumb1 {
+    width: 100%;
+    height: 400px;
+    padding: 0 5px;
+    object-fit: cover;
+    
+}
+
+.frame1-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 1.5em;
+   
+}
+
+.brand-name {
+    text-transform: uppercase;
+    color: #680d00;
+    font-weight: 500;
+}
+
+.description {
+    width: 100%;
+    height: 1.2em;
+    line-height: 1.2em;
+    overflow: hidden;opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+   /*    frame 2 card   */
+
+.frame2-categories {
+    margin: 5em auto 0;
+}
+.frame2-categories h2 {
+    font-size: 2em;
+    color: #680d00;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+   }
+
+   .frame2-container {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.frame2-product {
+    display: flex;
+}
+
+.frame2-card {
+    flex: 0 0 auto;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.frame2-image {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    
+}
+
+.image-thumb2 {
+    width: 100%;
+    height: 450px;
+    padding: 0 10px;
+    
+}
+
+    /*    frame 3   */
+
+    .frame3-container {
+        position: relative;
+        width: 80%;
+        margin: 0.5em auto 0;
+        overflow: hidden;
+    }
+    
+    .frame3-product {
+        display: flex;
+    }
+    
+    .frame3-card {
+        flex: 0 0 auto;
+        width: 50%;
+        height: 450px;
+    }
+    
+    .frame3-image {
+        position: relative;
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+    }
+    
+    .image-thumb {
+        width: 100%;
+        height: 400px;
+        padding: 0 5px;
+    }
+
+   /* #first-pix {
+        background-image: url(Images/category2.png);
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    #second-pix {
+        background-image: url(Images/category2.png);
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    #third-pix {
+        background-image: url(Images/category2.png);
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+    
+    #fourth-pix {
+        background-image: url(Images/category2.png);
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+    */
+
+    
+
+
+   /*   About Us    */
+
+.about-us {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em auto 3em;
+}
+
+
+.about-us h3 {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #680d00;
+    margin-bottom: 0.3em;
+}
+
+.about-us p {
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.4em;
+
+}
+
+.about-us button {
+    margin-top: 0.8em;
+    padding: 0.5em;
+    color: #FFF;
+    border-radius: 0.4em;
+    background-color: #680d00;
+    border: none;
+    transition: all 1.5s ease-out;
+}
+
+.about-us button:hover {
+    cursor: pointer;
+    background-color: #934f44;
+    color: rgb(168, 167, 167);
+}
+
+.about-us button a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/*      footer       */
+
+.footer {
+    width: 100%;
+    margin-top: 2em;
+    background-color:  rgb(181, 179, 179);
+    font-size: 0.8em;
+}
+
+.footer .footer-section-1 {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.7em;
+}
+
+.footer-section-1 div ul li img {
+    width: 5em;
+}
+
+.footer-section-1 div ul li {
+    margin-bottom: 0.5em;
+}
+
+.privacy-policy ul li {
+    text-align: right;
+    list-style: none;
+}
+
+.footer-categories {
+    text-align: center;
+}
+
+.social-handles {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1em auto;
+}
+
+.social-handles div a {
+    color: black;
+}
+
+.social-handles div a:hover {
+    cursor: pointer;
+}
+
+.copyright {
+    background-color: grey;
+    padding: 0.5em;
+    text-align: center;
+}
+
+
+/*    Women, Men, Kids, Accessories     */
+
+.main-header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.links-header {
+   width: 90%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+   padding: 1.5em 0 0.5em;
+}
+
+.links-logo img {
+    width: 6em;
+    height: 1.3em;
+
+}
+
+.links-search {
+    width: 40%;
+    display: flex;
+    margin: 0.2em 0;
+}
+
+.links-search input {
+    width: 70%;
+    padding: 0.5em;
+    margin-right: 0.4em;
+    border-radius: 0.4em 0 0 0.4em;
+    border: 1.4px solid #680d00
+}
+
+.links-search button {
+    padding: 0 1.2em;
+    transform: translateX(-0.5em);
+    background-color: #680d00;
+    border-radius: 0 0.4em 0.4em 0;
+    color: #FFF;
+    border: 1.4px solid #680d00;
+    transition: background-color 1.5s ease-in-out;
+}
+
+.links-search button:hover {
+    background-color: #a83928;
+    cursor: pointer;
+}
+
+.links-cart {
+    width: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.women-h1 {
+    font-size: 2em;
+    color: #680d00;
+    margin-top: 1.7em;
+    text-align: center;
+    font-weight: 530;
+}
+
+
+   /*    frame 1    */
+.women-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 0.5em;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.women-product {
+    display: flex;
+    height: 300PX;
+}
+
+.women-card {
+    flex: 0 0 auto;
+    width: 32%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.women-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+   
+}
+
+.women-thumb {
+    width: 100%;
+    height: 350px;
+   /* object-fit: cover;*/
+}
+
+.women-section-2 button {
+    padding: 0.5em;
+    background-color: #680d00;
+    color: #FFF;
+    border: none;
+    border-radius: 0.3em;
+}
+
+.women-section-2 button a {
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.women-hr {
+    margin-top: 2em;
+    width: 100%;
+    background-color: #680d00;
+}
+
+.women-h2 {
+    font-size: 2em;
+    color: #680d00;
+    margin-top: 1.7em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.women-section-1 {
+    width: 90%;
+    height: 300px;
+    margin: 1.7em auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.women-section-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+/*    frame 2    */
+
+.women2-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 0.5em;
+    margin: 0.5em 0 0.5em;
+}
+
+.women2-product {
+    display: flex;
+}
+
+.women2-card {
+    flex: 0 0 auto;
+    width: 32%;
+    height: 350px;
+    margin: 0 auto 4em;
+}
+
+.women2-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+   
+}
+
+.women2-thumb {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+
+.hr-2 {
+    width: 100%;
+    margin: 3em 0;
+   background-color: #680d00;
+}
+
+/*    frame 3   */
+
+.women3-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 0.5em;
+    margin: 0.5em 0 0.5em;
+}
+
+.women3-product {
+    display: flex;
+}
+
+.women3-card {
+    flex: 0 0 auto;
+    width: 23%;
+    height: 250px;
+    margin: 0 auto 4em;
+}
+
+.women3-image {
+    position: relative;
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+   
+}
+
+.women3-thumb {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.women3-info {
+    margin-top: 0.5em;
+}
+
+.women3-info h2 {
+    margin-bottom: 0.2em;
+}
+
+.hr-2 {
+    width: 100%;
+    margin: 2em 0;
+   background-color: #680d00;
+}
+
+#last-container {
+    margin-bottom: 3em;
+}
